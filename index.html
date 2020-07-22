@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Open+san s:wght@300&display=swap" rel="stylesheet"> 
+         <link href='https://fonts.googleapis.com/css?family=Open+san s:wght@300&display=swap' rel='stylesheet'>
+        <title>Hand Cricket</title>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>   
+     <script type="text/javascript" href="gam.js">
+   
+  
+     function id(x){
+    return document.getElementById(x)
+}
+
+var your=prompt("What is your name?")
+while(your==" " || your==null || your=="" ||your=="Computer"){
+    var your=prompt("Enter your name..")
+}
+
+     myArray =[1,2,3,4,5,6]
+ var rand = myArray[Math.floor(Math.random() * myArray.length)]; 
+ 
+ tossopt=["BAT","BOWL"]
+ var toss= tossopt[Math.floor(Math.random() * tossopt.length)];
+ 
+ 
+ cointosscomp=["Heads","tails"]
+ var cointosscompu=cointosscomp[Math.floor(Math.random() * cointosscomp.length)];
+
+
+var name="some"
+var cointoss="Heads" 
+function coinhead(){
+    if(cointoss==cointosscompu ){
+    }
+    else{
+        alert("You lose the toss")
+      id("optto").innerText = "Computer has opt to " +toss;
+    }
+} 
+function cointail(){
+    if (cointoss==cointosscompu){
+        alert("You lose the toss")
+      id("optto").innerText = "Computer has opt to " +toss; 
+    }
+    else{
+    }
+}
+
+var chosecomp=toss
+var name;
+var name1;
+if(chosecomp=="BAT"){
+    name="Computer"
+    name1=your
+}
+else if(chosecomp=="BOWL"){
+    name=your
+    name1="Computer"
+}
+function batting1(){
+    alert("You have chosen to BAT")
+    name=your
+    name1="Computer"
+  }
+function bowling1(){
+    alert("You have chosen to BOWL") 
+    name="Computer"
+    name1=your
+}
+
+
+var score=0
+function start12(){
+id("score").innerText=name+" has scored: "+score  
+ alert("Hii!! "+your+", All the Best\nRemember that you should score atleast 1 run more than Computer to win\nIf both scores are equal.\nThen, It will be declared as 'Computer won the match'") 
+}
+function bigc(x){
+    bigArray = ["1","2","3","4","5","6"]
+    y=x-1
+    var sym=bigArray[y]
+    id("bigc").innerText=sym
+    id("bigicons").style.display="block"
+    id("compchose").style.display="none"
+    id("playerchose").style.display="none"
+    id("cc").innerText="Comp: "+x
+}
+function bigm(a){
+    bigArray = ["1","2","3","4","5","6"]
+    b=a-1
+    var sym2=bigArray[b]
+    id("bigm").innerText=sym2
+    id("bigicons").style.display="block"
+    id("playerchose").style.display="none"
+    id("compchose").style.display="none"
+    id("uu").innerText="You: "+a
+}
+function one(){
+    var rand1= myArray[Math.floor(Math.random() * myArray.length)]; 
+    var chosenumber=1
+    id("compchose").innerText="Computer chose:"+ rand1
+    id("playerchose").innerText="You chose: "+chosenumber
+    bigc(rand1);
+    bigm(chosenumber);
+    if(rand1==chosenumber){
+  var targe=score+1
+        alert(name+" is  out")          
+document.getElementById("numball").style.display="none"   
+
+id("bigicons").style.display="none"
+ document.getElementById("bnxt").style.display="block"    
+ id("out").innerText=name+" is out\nIt's "+name1+"'s turn to BAT"
+ id("score").innerText=name1+" has to score:"+targe
+    }
+else if(name==your){
+        score=score+1
+        id("score").innerText =name+" has scored: "+score; 
+    }
+     else if(name=="Computer"){
+        score=score+rand1
+          id("score").innerText =name+" has scored: "+score;    
+}
+}
+function two(){
+var rand1= myArray[Math.floor(Math.random() * myArray.length)]; 
+
+var chosenumber=2    
+  id("compchose").innerText="Computer chose:"+ rand1
+ id("playerchose").innerText="You chose: "+chosenumber 
+ bigc(rand1);
+ bigm(chosenumber);
+    if(rand1==chosenumber){
+    id("bigicons").style.display="none"
+    var targe=score+1
+       alert(name+" is out..")            
+document.getElementById("numball").style.display="none"   
+
+  document.getElementById("bnxt").style.display="block"    
+ id("out").innerText=name+" is out\nIt's "+name1+"'s turn to BAT"
+ id("score").innerText=name1+" has to score:"+targe
+    }
+    else if(name==your){
+        score=score+2
+        id("score").innerText =name+" has scored: "+score; 
+    }
+    else if(name=="Computer"){
+        score=score+rand1
+          id("score").innerText =name+" has scored: "+score; 
+    }
+}
+
+function three(){
+   var rand1= myArray[Math.floor(Math.random() * myArray.length)];  
+   var chosenumber=3
+   id("compchose").innerText="Computer chose:"+ rand1  
+  id("playerchose").innerText="You chose: "+chosenumber 
+   bigc(rand1);
+ bigm(chosenumber);
+       if(rand1==chosenumber){
+       var targe=score+1
+    alert(name+" is out..")
+    id("bigicons").style.display="none"
+ document.getElementById("numball").style.display="none"   
+ document.getElementById("bnxt").style.display="block"    
+ id("out").innerText=name+" is out\nIt's "+name1+"'s turn to BAT"
+ id("score").innerText=name1+" has to score:"+targe
+    }
+    else if(name==your){
+        score=score+3
+        id("score").innerText =name+" has scored: "+score; 
+    }
+  else if(name=="Computer"){
+        score=score+rand1
+          id("score").innerText =name+" has scored: "+score;    
+}  
+}
+function four(){
+    var rand1= myArray[Math.floor(Math.random() * myArray.length)]; 
+    var chosenumber=4
+    id("playerchose").innerText="You chose: "+chosenumber
+   id("compchose").innerText="Computer chose:"+ rand1   
+    bigc(rand1);
+ bigm(chosenumber);
+      if(rand1==chosenumber){
+      id("bigicons").style.display="none"
+      var targe=score+1
+  alert(name+" is out")       
+  document.getElementById("numball").style.display="none"   
+ document.getElementById("bnxt").style.display="block"    
+ id("out").innerText=name+" is out\nIt's "+name1+"'s turn to BAT"
+ id("score").innerText=name1+" has to score:"+targe
+    }
+    else if(name==your){
+        score=score+4
+         id("score").innerText =name+" has scored: "+score;
+    }  
+ else if(name=="Computer"){
+        score=score+rand1
+          id("score").innerText =name+" has scored: "+score;    
+}   
+}
+
+function five(){
+    var rand1= myArray[Math.floor(Math.random() * myArray.length)]; 
+    var chosenumber =5
+ id("playerchose").innerText="You chose: "+chosenumber   
+     id("compchose").innerText="Computer chose:"+ rand1 
+      bigc(rand1);
+ bigm(chosenumber);
+     if(rand1==chosenumber){
+alert(name+" is out")      
+ var targe=score+1
+ id("bigicons").style.display="none"
+ document.getElementById("numball").style.display="none"   
+ document.getElementById("bnxt").style.display="block"    
+ id("out").innerText=name+" is out\nIt's "+name1+"'s turn to BAT"
+ id("score").innerText=name1+" has to score:"+targe  
+    }
+    else if(name==your){
+        score=score+5
+         id("score").innerText =name+" has scored: "+score;
+    }   
+ else if(name=="Computer"){
+        score=score+rand1
+          id("score").innerText =name+" has scored: "+score;    
+}   
+}
+
+function six(){
+    var rand1 = myArray[Math.floor(Math.random() * myArray.length)]; 
+    var chosenumber=6
+    id("playerchose").innerText="You chose: "+chosenumber
+  id("compchose").innerText="Computer chose:"+ rand1    
+  bigc(rand1);
+ bigm(chosenumber); 
+
+       if(rand1==chosenumber){
+       id("bigicons").style.display="none"
+     var targe=score+1  
+ alert(name+" is out")       
+ document.getElementById("numball").style.display="none"   
+ document.getElementById("bnxt").style.display="block"    
+ id("out").innerText=name+" is out\nIt's "+name1+"'s turn to BAT"
+ id("score").innerText=name1+" has to score:"+targe
+    }
+    else if(name==your){ 
+        score=score+6
+        id("score").innerText =name+" has scored: "+score; 
+    }
+else if(name=="Computer"){
+        score=score+rand1
+          id("score").innerText =name+" has scored: "+score;    
+}    
+}
+
+
+function onenxt(){
+    var rand1= myArray[Math.floor(Math.random() * myArray.length)]; 
+    var chosenumber=1
+id("playerchose").innerText="You chose: "+chosenumber    
+  id("compchose").innerText="Computer chose:"+ rand1    
+   bigc(rand1);
+ bigm(chosenumber);
+    if(rand1==chosenumber){
+        alert(name1+" is  out")
+document.getElementById("nmballs").style.display="none"
+id("score").innerText=name+" has won the match"
+    }
+ else if(name1==your){
+        score=score-1
+        id("score").innerText =name1+" has to score: "+score; 
+    }
+    else if(name1=="Computer" ){
+        score=score-rand1
+        id("score").innerText=name1+" has to score: "+score;
+    }
+     if(score<=0){
+    id("score").innerText=name1+" has won the match"
+document.getElementById("nmballs").style.display="none"    
+}   
+}
+function twonxt(){
+  var rand1= myArray[Math.floor(Math.random() * myArray.length)]; 
+    var chosenumber=2
+   id("playerchose").innerText="You chose: "+chosenumber 
+      id("compchose").innerText="Computer chose:"+ rand1
+       bigc(rand1);
+ bigm(chosenumber);
+    if(rand1==chosenumber){
+        alert(name1+" is  out")
+document.getElementById("nmballs").style.display="none"
+id("score").innerText=name+" has won the match"
+    }
+ else if(name1==your){
+        score=score-2
+        id("score").innerText =name1+" has to score: "+score; 
+    }
+else if(name1=="Computer"){
+        score=score-rand1
+        id("score").innerText=name1+" has to score: "+score;
+    }    
+       if(score<=-1){
+    id("score").innerText=name1+" has won the match"
+document.getElementById("nmballs").style.display="none"    
+}   
+ 
+}
+function threenxt(){
+        var rand1= myArray[Math.floor(Math.random() * myArray.length)]; 
+    var chosenumber=3
+    id("playerchose").innerText="You chose: "+chosenumber
+    id("compchose").innerText="Computer chose:"+ rand1  
+     bigc(rand1);
+ bigm(chosenumber);
+    if(rand1==chosenumber){
+        alert(name1+" is  out")
+ document.getElementById("nmballs").style.display="none"
+   id("score").innerText=name+" has won the match"
+    }
+ else if(name1==your){
+        score=score-3
+        id("score").innerText =name1+" has to score: "+score; 
+    }
+    else if(name1=="Computer"){
+        score=score-rand1
+        id("score").innerText=name1+" has to score: "+score;
+   }
+     if(score<=-1){
+    id("score").innerText=name1+" has won the match"
+document.getElementById("nmballs").style.display="none"    
+}   
+}
+
+function fournxt(){
+    var rand1= myArray[Math.floor(Math.random() * myArray.length)]; 
+    var chosenumber=4
+   id("playerchose").innerText="You chose: "+chosenumber 
+  id("compchose").innerText="Computer chose:"+ rand1    
+   bigc(rand1);
+ bigm(chosenumber);
+    if(rand1==chosenumber){
+        alert(name1+" is  out")
+ document.getElementById("nmballs").style.display="none"
+ id("score").innerText=name+" has won the match"
+    }
+ else if(name1==your){
+        score=score-4
+        id("score").innerText =name1+" has to score: "+score; 
+    } 
+  else if(name1=="Computer"){
+        score=score-rand1
+        id("score").innerText=name1+" has to score: "+score;
+    }    
+     if(score<=-1){
+    id("score").innerText=name1+" has won the match"
+ document.getElementById("nmballs").style.display="none"
+}     
+}
+function fivenxt(){
+     var rand1= myArray[Math.floor(Math.random() * myArray.length)]; 
+    var chosenumber=5
+id("playerchose").innerText="You chose: "+chosenumber    
+  id("compchose").innerText="Computer chose:"+ rand1    
+  bigc(rand1);
+ bigm(chosenumber); 
+    if(rand1==chosenumber){
+        alert(name1+" is  out")
+document.getElementById("nmballs").style.display="none"
+id("score").innerText=name+" has won the match"
+    }
+ else if(name1==your){
+        score=score-5
+        id("score").innerText =name1+" has to score: "+score; 
+    }
+  else if(name1=="Computer"){
+        score=score-rand1
+        id("score").innerText=name1+" has to score: "+score;
+    }    
+    if(score<=-1){
+    id("score").innerText=name1+" has won the match"
+ document.getElementById("nmballs").style.display="none"
+ 
+}   
+}
+function sixnxt(){
+  var rand1= myArray[Math.floor(Math.random() * myArray.length)]; 
+    var chosenumber=6
+ id("playerchose").innerText="You chose: "+chosenumber   
+  id("compchose").innerText="Computer chose:"+ rand1    
+  bigc(rand1);
+ bigm(chosenumber); 
+    if(rand1==chosenumber){
+        alert(name1+" is  out")
+ document.getElementById("nmballs").style.display="none"
+ id("score").innerText=name+" has won the match"
+    }
+ else if(name1==your){
+        score=score-6
+        id("score").innerText =name1+" has to score: "+score;
+    }   
+  else if(name1=="Computer"){
+        score=score-rand1
+        id("score").innerText=name1+" has to score: "+score;
+    }    
+ if(score<=-1){
+    id("score").innerText=name1+" has won the match"
+  document.getElementById("nmballs").style.display="none"
+
+}    
+}
+function bnxt1(){
+    var score=score+1
+}
+
+     </script>
+	 <script>
+function rls(){
+    $(".rls2").show();
+    $(".rls").show();
+    $(".ex").show();    //Jquery
+    $(".s2").show();
+    $(".overs").hide();
+    $(".s1").hide();
+
+		
+
+}
+function main(){
+    $(".rls2").hide();
+    $(".selectcoin").hide();
+    $("#bnxt").hide();
+    $("#nmballs").hide();
+    $(".real").hide();
+    $(".selectany2").hide();
+    $(".rls").hide();
+    $(".tosspg").hide();
+    $(".num").hide();
+   
+    $(".ex").hide();
+    $(".s2").hide();
+		$("#bnxt3").hide();
+
+}
+
+function start(){
+    $(".mainpg").hide();
+    $(".gif").hide();
+    $(".overs").hide();
+    $(".tosspg").show();
+
+    $(".selectcoin").show();
+    $(".selectany").hide();
+
+}
+
+function coinheadot(){
+
+if(cointoss==cointosscompu){
+    $(".selectany").show();
+    $(".selectany2").show();  
+    $(".coinbuttons").hide();
+}
+else{
+      $(".selectany").hide();
+       $(".coinbuttons").hide();
+   $(".real").show();    
+       $(".selectany2").show();
+}
+	$("#bnxt3").hide();
+
+}
+function cointailot(){
+
+    if(cointoss==cointosscompu){
+       $(".selectany").hide();
+   $(".real").show();    
+       $(".coinbuttons").hide();
+       $(".selectany2").show();
+    }
+    else{
+        $(".selectany").show();
+        $(".selectany2").show();
+        $(".coinbuttons").hide();
+    }
+		$("#bnxt3").hide();
+
+}
+
+function batting(){
+    $(".real").show();
+   $(".selectany").hide();
+
+}
+
+function bowling(){
+    $(".real").show();
+    $(".selectany").hide();
+
+}
+
+function start1(){
+    $(".selectcoin").hide();
+    $(".match").show();
+    $(".num").show();
+		    $("#bnxt3").hide();
+
+
+}
+
+function bnxt(){
+    $("#nmballs").show();
+    $("#out").hide();
+    $("#bnxt").hide();
+		$("#bnxt3").show();
+
+}
+function bnxt3()
+{
+ location.reload();
+}
+	 </script>
+    </head>
+    <body onload="main()" class="bg-image" >
+		
+    <div class="mainpg">
+
+        <div class="hc" align="center">Hand Cricket</div><br />
+        <div class="his">This is a game played with bare hands like Rock Paper Scissors. I think Most of u are famliar with this game. I used to play this with my friends when I get bored in school. Try to play with ur friends using ur hands.It's very fun playing it.</div>
+  <button onClick="rls()" class="rlsbt">Rules</button>       
+     
+       
+        <div class="rls">Rules:</div>
+        <div class="rls2">
+           <ol type="i">
+  <li><b>Toss: </b>To select What you opt for i.e. batting or bowling...That is Heads or Tails<br/>
+                For ex: It will ask u to select heads or tails...<br />If u win the toss, u can choose whatever u want...<br />
+                Or else Computer chooses to either BAT or BOWL
+                </li ><br/>
+ <li><b>Batting:</b> It will ask u for a number from 1 to 6...<br />
+                    If u chose number x and computer chose any number otherthan x .Then it means, u have scored x runs...
+                  <br />  If the computer choose the same number u chose.<br />You are declared to be out and the batting turn goes for the computer...
+                </li><br />
+                <li><b>Bowling:</b> It is same as doing batting but here you are bowler..<br />You should guess what number the computer chooses. So that You can out him.. </li><br />
+                <li><b>Result: </b>If you scored more runs than the computer...It means You won the match...<br />And the same applies to the computer</li>
+            </ol>
+        </div>
+
+  
+ 
+  <div class="startbt">
+   <button class="start s1" onclick="start()">Start</button>
+    <button class="start s2" onclick="start()">Start</button>
+
+          </div>
+       </div>   
+  <div class="selectcoin">
+  <div class="tosshead" align="center">Toss</div>
+  <div class="selecthead">
+      Choose any one:
+  </div>
+  <br/><br />
+<img src="http://travel.fyicenter.com/Currency/INR_1_One_Rupee_Coin_Head.jpg"width="20%" class="img1"/>
+<img src="http://travel.fyicenter.com/Currency/INR_1_One_Rupee_Coin_Tail.jpg" width="20%" class="img2"/><br />
+<div class="coinbuttons">
+<button onClick="coinhead();coinheadot();" class="coin head">Heads</button>
+<button onClick="cointail();cointailot();"class="coin tails">Tails</button></div>
+<div class="selectany2">
+    <button class="coin head">Heads</button>
+    <button class="coin tails">Tails</button>
+</div>
+<div class="selectany">
+  <br/><br />
+<img src="cricketball.jpg"width="20%" class="img1"/>
+<img src="cricketbat.jpeg" width="20%" class="img2"/><br />
+
+   <button onclick="bowling();bowling1();" class="select bowl">Bowl</button>
+    <button onclick="batting();batting1();" class="select bat">Bat</button>
+ 
+</div>
+
+<div id="optto">
+</div>
+  <button class="real" onclick="start1();start12()">Start</button>
+  </div>
+  <div class="match">
+      <div id="score">
+      </div>
+      <div id="out">    
+      </div><br />
+      <div id="compchose">
+      </div>
+      <div id="playerchose">
+      </div>
+      <div class="num" id="numball">
+ <button onclick="one()" class="numyy one">1</button>
+  <button onclick="two()" class="numyy two">2</button>
+   <button onclick="three()" class="numyy three">3</button>   
+     <button onclick="four()" class="numyy four">4</button>
+    <button onclick="five()" class="numyy five">5</button>
+   <button onclick="six()" class="numyy six">6</button>
+  </div>
+  <div id="nmballs">
+       <button onclick="onenxt()" class="numyy one">1</button>
+  <button onclick="twonxt()" class="numyy two">2</button>
+   <button onclick="threenxt()" class="numyy three">3</button>   
+     <button onclick="fournxt()" class="numyy four">4</button>
+    <button onclick="fivenxt()" class="numyy five">5</button>
+   <button onclick="sixnxt()" class="numyy six">6</button>
+  </div>
+  <div id="bigicons">
+      <div id="uu"></div>
+      <div id="cc"></div>
+      <div id="bigc"></div>
+      <div id="bigm"></div>
+  </div>
+  <button onclick="bnxt();bnxt1()" id="bnxt"><--Next--></button>
+	   <button onclick="bnxt3()"id="bnxt3" >Play again</button>
+ 
+     </div>
+
+
+	 <style>
+body {  
+margin:0;
+	align-items:center;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+}
+.bg-image{
+height:142.3px;
+width:100%;
+padding-top:0%;
+padding-bottom:100%;
+background:url(bg1n.jpg) no-repeat  ;
+background-size:cover;
+background-color:#24272E;
+
+}
+#bigicons{
+    display:none;
+    position:absolute;
+    top:120px;
+    left:20px;
+    font-family:"Merriweather";
+    color:white;
+}
+#bigc{
+    display:block;
+    z-index:7;
+    background-color:;
+    font-size:700%;
+    max-width:50%;
+    position:absolute;
+    left:175px;
+}
+#bigm{
+    display:block;
+    font-size:700%;
+   max-width:50%;
+}
+#cc{
+    position:absolute;
+    top:0px;
+    left:175px;
+    width:100px;
+}
+.hc{
+	margin-top;10px;
+	background-color:white;
+    font-family:"Merriweather";
+    font-size:300%;
+    color:black;
+	    border:2px solid black;
+
+	
+}
+
+.his{
+    font-family:"Merriweather";
+    color:white;
+    font-size:105%;
+    background-color:black;
+}
+
+.rls{
+    font-family:"Merriweather";
+    font-size:150%;
+   text-decoration:underline ; 
+}
+
+.rls2{
+font-family:"Merriweather";
+    border:2px double white;
+    font-size:120%;
+    background-color:black;
+    color:white;
+}
+
+.rlsbt{
+   border-radius:9px;
+    background-color:gray;
+    font-size:15px;
+    width:100px;
+    position:relative ;
+    height:25px;
+    float:left ;
+    top:0px;
+	margin:10px auto;
+	color:white;
+}
+
+.numy{
+    margin:4px;
+    font-size:150%;
+    border-radius:6px;
+    border:1px solid red;
+    position:relative;
+}
+
+
+.start{
+    width:100%;
+    background-color:white;
+    border-radius:9px;
+    font-family:"Merriweather";
+    position:relative ;
+    top:7px;
+    font-size:150%;
+    border:1px solid skyblue;
+    color:black;
+}
+.s2{
+	padding:15px;
+    position:relative ;
+    top:7px;
+}
+
+.real{
+    position:relative;
+    top:0px;
+}
+
+.overs{
+    border:1.5px double red;
+    font-size:110%;
+    font-family:"Merriweather";
+    background-color:#E1C8FF;    
+    width:255px;
+    position:relative;
+    top:0px;
+ padding: 5px;
+margin:auto ;
+  margin-top: 5%;
+  border-radius: 3px;
+  overflow: hidden;   
+}
+
+.coin{
+    background-color:white;
+    color:black;
+    border-radius:10px;
+    font-family:"Merriweather";
+    border:1px solid while;
+    width:80px;
+    font-size:150%;
+    margin-left:50px;
+    margin-right:50px;
+	display:inline-block;
+	text-align:center;
+}
+
+.selecthead{
+    font-family:"Merriweather";
+    font-size:200%;
+    color:white;
+    position:relative ;
+    top:25px;
+}
+.tosshead{
+	background-color:white;
+	border:3px solid black;
+    font-family:"Merriweather";
+    font-size:350%;
+    color:black;
+}
+
+
+.select{
+    background-color:white;
+    font-style:italic;
+    border:1px dashed black;
+    border-radius:10px;
+    font-size:25px;
+    margin-left:80px;
+    margin-right:50px;
+    margin-top:20px;
+    font-family:"Merriweather";
+}
+
+.img1,.img2{
+    border-radius:49%;
+
+}
+
+.real{
+      width:100%;
+    background-color:white;
+    border-radius:9px;
+    font-family:"Merriweather";
+    font-size:150%;
+    border:1px solid skyblue;
+    color:black;  
+}
+
+
+.numyy{
+    margin:15px auto;
+    font-size:425%;
+    border-radius:6px;
+    border:1px double black;
+    position:relative ;
+    top:250px;
+	float:center;
+}
+.numyy:hover{
+	margin:15px auto;
+    animation-name:bounce;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
+    animation-duration:2s;
+}
+.one,.three,.five{
+    background-color:white;
+	border:2px solid black;
+    }
+    
+.two,.four,.six{
+    background-color:black;
+	color:white;
+	border:2px solid white;
+}
+.four{
+    width:100px;
+}
+
+#score{
+    font-size:195%;
+    font-family:"Merriweather";
+    color:white;
+}
+
+#optto{
+    font-family:"Merriweather";
+    font-size:125%;
+		color:white;
+}
+#bnxt{
+    font-family:"Merriweather";
+    border-radius:5px;
+    background-color:white;
+    width:350px;
+    color:black;
+    font-size:200%;
+    position:relative ;
+    left:-5px;
+    top:230px;
+	margin:15px auto;
+}
+#bnxt3{
+    font-family:"Merriweather";
+    border-radius:5px;
+    background-color:white;
+    width:350px;
+    color:black;
+    font-size:200%;
+    position:relative ;
+    left:-5px;
+    top:260px;
+	margin:15px auto;
+
+}
+#out{
+    font-family:"Merriweather";
+    font-size:220%;
+	background:#E25840;
+	color:white;
+	margin-top:10px;
+	padding:2px,10px;
+    position:relative ;
+    top:20px;
+	text-align:center;
+}
+#playerchose,#compchose{
+    font-family:"Merriweather";
+    font-size:145%;
+    color:white;
+}
+
+@keyframes bounce{
+    0%{
+        background-color:red;
+    }
+    15%{
+        background-color:orange;
+    }
+    30%{
+        background-color:yellow;
+    }
+    45%{
+        background-color:green;
+    }
+    60%{
+        background-color:blue;
+    }
+    75%{
+        background-color:indigo;
+    }
+    90%{
+        background-color:violet;
+    }
+    100%{
+        background-color:black;
+    }
+}
+</style>
+    </body>
+</html>

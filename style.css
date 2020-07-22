@@ -1,0 +1,304 @@
+body {  
+margin:0;
+	align-items:center;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+}
+.bg-image{
+height:142.3px;
+width:100%;
+padding-top:0%;
+padding-bottom:100%;
+background:url(bg1n.jpg) no-repeat  ;
+background-size:cover;
+background-color:#24272E;
+
+}
+#bigicons{
+    display:none;
+    position:absolute;
+    top:120px;
+    left:20px;
+    font-family:"Merriweather";
+    color:white;
+}
+#bigc{
+    display:block;
+    z-index:7;
+    background-color:;
+    font-size:700%;
+    max-width:50%;
+    position:absolute;
+    left:175px;
+}
+#bigm{
+    display:block;
+    font-size:700%;
+   max-width:50%;
+}
+#cc{
+    position:absolute;
+    top:0px;
+    left:175px;
+    width:100px;
+}
+.hc{
+	margin-top;10px;
+	background-color:white;
+    font-family:"Merriweather";
+    font-size:300%;
+    color:black;
+	    border:2px solid black;
+
+	
+}
+
+.his{
+    font-family:"Merriweather";
+    color:white;
+    font-size:105%;
+    background-color:black;
+}
+
+.rls{
+    font-family:"Merriweather";
+    font-size:150%;
+   text-decoration:underline ; 
+}
+
+.rls2{
+font-family:"Merriweather";
+    border:2px double white;
+    font-size:120%;
+    background-color:black;
+    color:white;
+}
+
+.rlsbt{
+   border-radius:9px;
+    background-color:gray;
+    font-size:15px;
+    width:100px;
+    position:relative ;
+    height:25px;
+    float:left ;
+    top:0px;
+	margin:10px auto;
+	color:white;
+}
+
+.numy{
+    margin:4px;
+    font-size:150%;
+    border-radius:6px;
+    border:1px solid red;
+    position:relative;
+}
+
+
+.start{
+    width:100%;
+    background-color:white;
+    border-radius:9px;
+    font-family:"Merriweather";
+    position:relative ;
+    top:7px;
+    font-size:150%;
+    border:1px solid skyblue;
+    color:black;
+}
+.s2{
+	padding:15px;
+    position:relative ;
+    top:7px;
+}
+
+.real{
+    position:relative;
+    top:0px;
+}
+
+.overs{
+    border:1.5px double red;
+    font-size:110%;
+    font-family:"Merriweather";
+    background-color:#E1C8FF;    
+    width:255px;
+    position:relative;
+    top:0px;
+ padding: 5px;
+margin:auto ;
+  margin-top: 5%;
+  border-radius: 3px;
+  overflow: hidden;   
+}
+
+.coin{
+    background-color:white;
+    color:black;
+    border-radius:10px;
+    font-family:"Merriweather";
+    border:1px solid while;
+    width:80px;
+    font-size:150%;
+    margin-left:50px;
+    margin-right:50px;
+	display:inline-block;
+	text-align:center;
+}
+
+.selecthead{
+    font-family:"Merriweather";
+    font-size:200%;
+    color:white;
+    position:relative ;
+    top:25px;
+}
+.tosshead{
+	background-color:white;
+	border:3px solid black;
+    font-family:"Merriweather";
+    font-size:350%;
+    color:black;
+}
+
+
+.select{
+    background-color:white;
+    font-style:italic;
+    border:1px dashed black;
+    border-radius:10px;
+    font-size:25px;
+    margin-left:80px;
+    margin-right:50px;
+    margin-top:20px;
+    font-family:"Merriweather";
+}
+
+.img1,.img2{
+    border-radius:49%;
+
+}
+
+.real{
+      width:100%;
+    background-color:white;
+    border-radius:9px;
+    font-family:"Merriweather";
+    font-size:150%;
+    border:1px solid skyblue;
+    color:black;  
+}
+
+
+.numyy{
+    margin:15px auto;
+    font-size:425%;
+    border-radius:6px;
+    border:1px double black;
+    position:relative ;
+    top:250px;
+	float:center;
+}
+.numyy:hover{
+	margin:15px auto;
+    animation-name:bounce;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
+    animation-duration:2s;
+}
+.one,.three,.five{
+    background-color:white;
+	border:2px solid black;
+    }
+    
+.two,.four,.six{
+    background-color:black;
+	color:white;
+	border:2px solid white;
+}
+.four{
+    width:100px;
+}
+
+#score{
+    font-size:195%;
+    font-family:"Merriweather";
+    color:white;
+}
+
+#optto{
+    font-family:"Merriweather";
+    font-size:125%;
+		color:white;
+}
+#bnxt{
+    font-family:"Merriweather";
+    border-radius:5px;
+    background-color:white;
+    width:350px;
+    color:black;
+    font-size:200%;
+    position:relative ;
+    left:-5px;
+    top:230px;
+	margin:15px auto;
+}
+#bnxt3{
+    font-family:"Merriweather";
+    border-radius:5px;
+    background-color:white;
+    width:350px;
+    color:black;
+    font-size:200%;
+    position:relative ;
+    left:-5px;
+    top:260px;
+	margin:15px auto;
+
+}
+#out{
+    font-family:"Merriweather";
+    font-size:220%;
+	background:#E25840;
+	color:white;
+	margin-top:10px;
+	padding:2px,10px;
+    position:relative ;
+    top:20px;
+	text-align:center;
+}
+#playerchose,#compchose{
+    font-family:"Merriweather";
+    font-size:145%;
+    color:white;
+}
+
+@keyframes bounce{
+    0%{
+        background-color:red;
+    }
+    15%{
+        background-color:orange;
+    }
+    30%{
+        background-color:yellow;
+    }
+    45%{
+        background-color:green;
+    }
+    60%{
+        background-color:blue;
+    }
+    75%{
+        background-color:indigo;
+    }
+    90%{
+        background-color:violet;
+    }
+    100%{
+        background-color:black;
+    }
+}
